@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salg system</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/dashboard.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="navbar">
+            <div id="logoHolder">
+                <div id="logoImage">
+                    <img src="../img/logo.png" alt="Nettside logo.">
+                </div>
+                <div id="logoName">
+                    <h1 class="logoTitle">SALGSYSTEM ANSATT</h1>
+                </div>
+            </div>
+            <div id="navbarMeny">
+                <div class="navbarElement">
+                    <p>Oversikt</p>
+                </div>
+                <div class="navbarElement">
+                    <p onclick="checkAdmin('employees.html')">Ansatte</p>
+                </div>
+                <div class="navbarElement">
+                    <p>Søkemotor</p>
+                </div>
+                <div class="defaultButton" id="logOut" onclick="logOut()">
+                    <p>Logg Ut</p>
+                </div>
+            </div>
+        </div>
+        <div id="pageContent-wrapper">
+            <div id="pageContent">
+                <div id="misc">
+                    <div id="chartProvider-wrapper">
+                        <canvas id="providerChart"></canvas>
+                    </div>
+                </div>
+                <div id="visitorList-wrapper">
+                    <span id="visitorListDenied" style="color: red"></span>
+                </div>
+                <div id="visitorList-tools">
+                    <label class="subTitle">Søk:</label>
+                    <input type="text" id="searchInVisitor" placeholder="Bruk: '<nøkkelord> i <kolonne>'">
+                    <span id="search-error" style="color: red"></span>
+                    <button class="defaultButton" onclick="searchInVisitor()">Søk</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/authenticator.js"></script>
+<script src="../js/global.js"></script>
+<script src="../js/dashboard.js"></script>
+</html>

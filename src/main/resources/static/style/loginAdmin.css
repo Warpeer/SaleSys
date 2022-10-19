@@ -1,0 +1,13 @@
+#logOut{
+    background-color: white;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+}
+#login-wrapper{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 4rem;
+    box-shadow: none;
+}

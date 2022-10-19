@@ -1,0 +1,177 @@
+#wrapper {
+    align-items: center;
+    min-height: calc(100% + 10rem);
+    margin-bottom:-10rem;
+}
+#wrapper:after{
+    display: block;
+    content: "";
+    height: 142px;
+}
+
+#surveyLogo > img{
+    height: 100px;
+}
+#pageContent{
+    width: 60%;
+    height: fit-content;
+    margin: 15% auto auto;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+.form {
+    height: 0;
+    width: 60%;
+    position: fixed;
+    z-index: 1;
+    bottom: -5rem;
+    left:20%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: -4px 10px 20px -10px rgba(0,0,0,0.66);
+    border-radius: 10px;
+}
+
+
+.form a:hover, .offcanvas a:focus{
+    color: dodgerblue;
+}
+
+.form .closebtn {
+    position: absolute;
+    top: 0;
+    margin:auto;
+    font-size: 36px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+#form-content {
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#breadCrumb-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    margin-bottom: 1rem;
+}
+.breadcrumb {
+    background-color: rgb(237, 243, 255);
+    border-radius: 50px;
+    font-size: 60%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 0 1rem 0 1rem;
+    color: #18315b;
+    border: rgba(197, 217, 248, 0.26) solid 2px;
+}
+#breadcrumb-divider{
+    width: 5%;
+    height: 0.3rem;
+    background-color: rgb(237, 243, 255);
+    border-top: rgba(197, 217, 248, 0.26) solid 2px;
+    border-bottom: rgba(197, 217, 248, 0.26) solid 2px;
+}
+.form-formatting{
+    width: 90%;
+    height: fit-content;
+    border: #c5c5c5 solid 1px;
+    margin: 0 auto 1rem auto;
+    border-radius: 3px;
+}
+.form-formatting form{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.formControl{
+    text-align: left;
+    width: 34%;
+    margin: 1rem;
+}
+label {
+    color: #484857;
+}
+.formControl input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #c5c5c5;
+    transition: 0.5s;
+}
+#slider-wrapper{
+    width: 100%;
+    text-align: left;
+    margin: 1rem;
+}
+#slider-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#slider-content p{
+    font-size: 120%;
+    color: dodgerblue;
+    margin: auto;
+}
+#sliderValue{
+    font-size: 120%;
+    text-align: right;
+    width: 20%;
+    outline: none;
+    border: 0;
+    color: dodgerblue;
+}
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 80%; /* Full-width */
+    height: fit-content; /* Specified height */
+    outline: none; /* Remove outline */
+    background: rgb(197, 217, 248); /* Grey background */
+    border-radius: 25px;
+    opacity: 0.3; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin-right: 2rem;
+}
+.slider:hover {
+    opacity: 0.9;
+}
+input:focus {
+    border: 2px solid dodgerblue;
+    outline: none;
+}
+#resultContent{
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    font-size: 120%;
+}
+.resultFormatting {
+    font-size: 140%;
+    color: dodgerblue;
+    margin: 0 5px 0 5px;
+}

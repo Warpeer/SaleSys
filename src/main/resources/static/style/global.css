@@ -1,0 +1,183 @@
+html, body {
+    height:100%;
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+}
+#footer{
+    position: relative;
+    width: 80%;
+    bottom: 0;
+    margin: 0 auto 0 auto;
+    background-color: dodgerblue;
+    height: fit-content;
+    display: none;
+}
+#footerTop{
+    background-color: aquamarine;
+    height: 4.75rem;
+}
+#footerDivider{
+    background-color: #17172d;
+    height: 0.5rem;
+    width: 80%;
+    margin: auto;
+}
+#footerBottom{
+    background-color: aquamarine;
+    height: 4.75rem;
+}
+#navbar{
+    width: 80%;
+    margin: auto;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    border-bottom: 1px solid #626262;;
+}
+#logoHolder{
+    width: fit-content;
+    height: 80%;
+    margin-left: 1rem;
+    display: flex;
+}
+#logoImage{
+    height: 100%;
+    width: 4rem;
+}
+#logoImage > img{
+    object-fit: cover;
+    width:100%;
+}
+#logoName{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+#navbarMeny{
+    width: fit-content;
+    height: 80%;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #484857;
+}
+.navbarElement{
+    margin: 0 20px 0 20px;
+    max-height: 100%;
+}
+#navbarMeny > .navbarElement > p {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#navbarMeny > .navbarElement > p:hover {
+    color: dodgerblue;
+    cursor: pointer;
+}
+.defaultButton{
+    display: flex;
+    align-items: center;
+    background-color: dodgerblue;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 3px;
+    border-style: none;
+    color: white;
+    max-height: 1rem;
+    width: fit-content;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 90%;
+    cursor: pointer;
+    margin: auto;
+}
+#login-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: -4px 10px 20px -10px rgba(0,0,0,0.66);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    height: fit-content;
+}
+#login-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 1rem;
+}
+#login-form{
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+.login-formControl input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #c5c5c5;
+    transition: 0.5s;
+}
+.login-formControl{
+    text-align: left;
+    width: 100%;
+}
+.closebtn {
+    top: 0;
+    float: left;
+    margin:auto;
+    font-size: 36px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+#closeBtn-wrapper{
+    text-align: left;
+}
+#btnLogIn{
+    margin: 1rem 0 1rem 0;
+}
+
+/*TEXT FORMATTING*/
+
+.logoTitle{
+    font-size: 200%;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #17172d;
+}
+
+.title{
+    font-size: 300%;
+    color: #17172d;
+}
+.subTitle{
+    font-size: 120%;
+    color: #484857;
+    margin-bottom: 2rem;
+}
+.defaultFormatting{
+    color: #484857;
+    font-size: 80%;
+    margin-top: 2rem;
+}

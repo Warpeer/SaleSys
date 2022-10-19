@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salg system</title>
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="login-form">
+    <div id="login-wrapper">
+        <div id="closeBtn-wrapper">
+            <a href="javascript:void(0)" class="closebtn" onclick="hideLogin()">&times;</a>
+        </div>
+        <div id="login-content">
+            <p class="subTitle" style="margin-bottom: 3rem">Logg inn</p>
+            <form>
+                <div class="login-formControl">
+                    <label for="email">Epost</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="login-formControl">
+                    <label for="password">Passord</label>
+                    <input type="password" id="password">
+                </div>
+            </form>
+            <span id="loginError" style="color: red"></span>
+            <div class="defaultButton" id="btnLogIn" onclick="logIn()">Logg inn</div>
+        </div>
+    </div>
+</div>
+<div id="wrapper">
+    <div id="navbar">
+        <div id="logoHolder">
+            <div id="logoImage">
+                <img src="img/logo.png" alt="Nettside logo.">
+            </div>
+            <div id="logoName">
+                <h1 class="logoTitle">SALGSYSTEM</h1>
+            </div>
+        </div>
+        <div id="navbarMeny">
+            <div class="navbarElement">
+                <p>Om oss</p>
+            </div>
+            <div class="navbarElement">
+                <p>Ressurser</p>
+            </div>
+            <div class="navbarElement">
+                <p>Dokumentasjon</p>
+            </div>
+            <div class="defaultButton" id="btnLogInForm" onclick="showLogin()">
+                <p>Logg inn</p>
+            </div>
+        </div>
+    </div>
+    <div id="pageContent">
+        <div id="surveyLogo">
+            <img src="img/test.png" alt="test ikon.">
+        </div>
+        <h1 class="title">Sammenlign priser.</h1>
+        <p class="subTitle">Her kan du sammenligne dine nåværende priser opp mot våres med vårt sammenligningsverktøy .</p>
+        <div class="defaultButton" onclick="openForm()">Sammenlign</div>
+        <div style="margin-bottom: 2rem"></div>
+    </div>
+</div>
+<div id="myForm" class="form">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeForm()">&times;</a>
+    <div id="form-content">
+        <div id="breadCrumb-wrapper">
+            <div class="breadcrumb" id="stage-1">
+                <p>Fyll ut spørsmålene</p>
+            </div>
+            <div id="breadcrumb-divider"></div>
+            <div class="breadcrumb" id="stage-2">
+                <p>Resultat etter Sammenligning</p>
+            </div>
+        </div>
+        <div id="form-content-wrapper">
+            <p class="defaultFormatting">Generelle spørsmål</p>
+            <div class="form-formatting">
+                <form>
+                    <div class="formControl">
+                        <label for="fname">Fornavn</label><br>
+                        <input type="text" id="fname">
+                    </div>
+                    <div class="formControl">
+                        <label for="lname">Etternavn</label><br>
+                        <input type="text" id="lname">
+                    </div>
+                    <div class="formControl">
+                        <label for="phoneNumber">Mobilnummer*</label><br>
+                        <input type="number" id="phoneNumber">
+                    </div>
+                </form>
+            </div>
+            <p class="defaultFormatting">Nåværende abonnement</p>
+            <div class="form-formatting">
+                <form>
+                    <div class="formControl">
+                        <label for="provider">Operatør*</label><br>
+                        <input type="text" id="provider">
+                    </div>
+                    <div class="formControl">
+                        <label for="price">Pris /mnd*</label><br>
+                        <input type="number" id="price">
+                    </div>
+                    <div id="slider-wrapper">
+                        <label for="dataAmount">Mengde data*</label><br>
+                        <div id="slider-content">
+                            <input type="range" min="1" max="30" value="1" class="slider" id="dataAmount">
+                            <input id="sliderValue" value="1"><p>GB</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="defaultButton" onclick="showResults()">Gå videre</div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div id="footerTop">
+
+    </div>
+    <div id="footerDivider">
+
+    </div>
+    <div id="footerBottom">
+
+    </div>
+</div>
+</body>
+<script src="js/classes.js"></script>
+<script src="js/global.js"></script>
+<script src="js/index.js"></script>
+</html>

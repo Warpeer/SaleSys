@@ -1,0 +1,95 @@
+#logOut{
+    background-color: white;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+}
+#pageContent{
+    display: flex;
+    width:95%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5rem auto 5rem auto;
+}
+#visitorList-wrapper{
+    padding: 1rem;
+    width: fit-content;
+    height: 70vh;
+    border: #c5c5c5 solid 1px;
+    overflow-y: scroll;
+}
+#misc{
+    padding: 1rem;
+    width: 35%;
+    height: 70vh;
+    border: #c5c5c5 solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+}
+#chartProvider-wrapper{
+    width: 100%;
+    height: fit-content;
+    border-bottom: #c5c5c5 solid 1px;
+}
+#chartDataAmount-wrapper{
+    width: 100%;
+    height: 47.5%;
+}
+#visitorList-tools{
+    width: 15%;
+    border: #c5c5c5 solid 1px;
+    height: 70vh;
+    padding: 1rem;
+    text-align: left;
+}
+#visitorList {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-X: scroll;
+    max-width: 500px;
+}
+
+#visitorList td, #visitorList th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+}
+
+#visitorList tr:nth-child(even){background-color: #f2f2f2;}
+
+#visitorList tr:hover {background-color: #ddd;}
+
+#visitorList th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: dodgerblue;
+    color: white;
+}
+#btnDel{
+    height: 24px;
+    width: 24px;
+    font-weight: bolder;
+    color: red;
+    background-color: transparent;
+    border:none;
+}
+#providerChart{
+    height: 100%;
+}
+
+#visitorList-tools input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #c5c5c5;
+    transition: 0.5s;
+}
+#visitorList-tools input:focus {
+    border: 2px solid dodgerblue;
+    outline: none;
+}
